@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina:
+alumno:
+fecha:
+-->
+
+<head>
+  <title>Titulo en Etiqueta del Navegador</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="01-2timestre.css">
+    <style>
+	/* aquí estilos aplicados solo a esta pagina */
+	body {
+		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+	}
+  </style>
+  <script>
+	// seccion de codigo javascript 
+  </script>
+</head>
+
+
+<body>
+
+<h1>VALIDAR FORMULARIOS</h1>
+
+<form action="01-2timestre.js">
+  <label for="nombre">Nombre:</label><br>
+  <input type="text" id="nombre" name="nombre" maxlength="15" required><br>
+  <label for="apellido">Apellido:</label><br>
+  <input type="text" id="apellido" name="apellido" maxlength="15" required><br>
+  <label for="edad">Edad:</label><br>
+  <input type="number" id="edad" name="edad" min="18" max="100" required><br>
+  <label for="fecha">Fecha de nacimiento:</label><br>
+  <input type="date" id="fecha" name="fecha" min="1920-01-01" max="2003-12-31" required><br>
+  <label for="color">Color favorito:</label><br>
+  <input type="color" id="color" name="color" required><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<script>
+  // seccion de codigo javascript 
+
+</script>
+</body>
+</html>
