@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina:
+alumno:
+fecha:19/01/2021
+-->
+
+<head>
+  <title>Página Logout</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="02-2trimestre.css"/>
+    <style>
+	/* aquí estilos aplicados solo a esta pagina */
+	body {
+		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
+	}
+  </style>
+  <script>
+	// seccion de codigo javascript 
+  </script>
+</head>
+
+
+<body>
+	<header>
+		<h1>TÍTULO PRINCIPAL VISIBLE</h1> <!-- 1 y solo 1 por pagina -->
+	</header>
+	
+	<main> <!-- aqui podemos tambien usar section y article -->
+	<p>Bienvenido <span id="aqui"></span></p>
+		<form name="miFormulario" onSubmit="return borraUsr()">
+			<input type="submit" value="Salir">
+		</form>
+		
+
+	</main>
+	
+	<footer>
+	
+	</footer>
+	
+
+	<script>
+	// seccion de codigo javascript 
+		document.getElementById("aqui").innerHTML = sessionStorage.getItem("nomUsr");
+		function borraUsr(){
+			sessionStorage.removeItem("nomUsr");
+			window.open("02-2trimestre.html")
+		}
+	</script>
+</body>
+</html>
