@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+web o pagina:
+alumno:
+fecha:
+-->
+
+<head>
+  <title>Titulo en Etiqueta del Navegador</title>
+  <meta charset="UTF-8"/>
+  <link rel="stylesheet" href="00-modelo.css"/>
+    <style>
+	
+	    *{
+		    box-sizing:border-box;
+			margin:0px;
+			padding:0px;
+		
+		}
+        body{  
+		    
+		
+		}
+        #di {
+		    background-color:rgba(255,0,0,0.5);
+			
+		}
+        #dc {
+		    background-color:rgba(0,255,0,0.5);
+		}
+        #dd {
+		    background-color:rgba(0,0,255,0.5);
+
+		}
+        #row {
+			display:flex;
+		}
+		
+		#di, #dc, #dd {
+		    width:33.33%;
+			min-height:40px;
+			max-height:60px;
+		}
+		@media screen and (max-width:600px){
+		    #row {
+			    display:block;
+		    }
+			#di, #dc, #dd {
+		        width:100%;
+			}
+		    
+		}
+    </style>
+</head>
+
+
+<body>
+    <div id="row">
+        <div id="di">texto izquierda</div>
+        <div id="dc">texto centro</div>
+        <div id="dd">texto derecha</div>
+    </div>
+</body>
+</html>
