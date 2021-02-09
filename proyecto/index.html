@@ -17,9 +17,7 @@ fecha:
 		background: rgba(0, 0, 128, 0.1) /* Azul al 10% */
 	}
   </style>
-  <script>
-	// seccion de codigo javascript 
-  </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 
@@ -40,9 +38,15 @@ fecha:
   <input type="color" id="color" name="color" required><br><br>
   <input type="submit" value="Submit">
 </form> 
-
 <script>
-  // seccion de codigo javascript 
+$(document).ready(function(){
+	 $("input").mouseenter(function(){
+		$(this).toggleClass("yellow");
+	 });
+	 $("input").mouseleave(function(){
+		$(this).toggleClass("yellow");
+	 }); 
+ });
 
 </script>
 </body>
