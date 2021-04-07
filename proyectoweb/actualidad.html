@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: Pagina sobre algunos artículos de ciberseguridad.
+autor: Ismael Paloma Narváez
+fecha: Marzo 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, user-scable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>ACTUALIDAD</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	<!-- una hoja de estilos personalizada-->
+	<link href="01-modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script></script>
+</head>
+
+
+<body background="fondo2.jpg">
+
+	<div class="marco">
+		<div class="encabezado">
+			<a href="championships.html"  style="color:white;">Championships</a>
+			<a href="#tendencias" onclick="clickCounter()" style="color:white;">Tendencias</a>
+			<a href="#nuevo" onclick="clickCounter()" style="color:white;">Nuevo</a>
+				
+			
+		</div>
+		
+		
+		<div class="migas">
+			<div id="nVeces">
+				
+			</div>
+			<ul class="ruta">
+					<li><a id="inicio">
+					<p><span id="this_title">mytitle</span>.</p>
+			</ul>
+		
+        </div>
+		<div class="lado">
+				<div class="vertical-menu">
+				  <div class="dropdown">
+					<button class="dropbtn">NOTICIAS
+						 <i class="fa fa-caret-down"></i>
+					</button>
+					<div class="dropdown-content">
+						<a href="#elena">ELENA</a>
+						<a href="#pixeles">PÍXEL ESPÍA</a>
+						
+					</div>
+				</div> 
+				  
+				</div>
+		
+		</div>
+		<div class="contenido">
+			
+				<h1 id="principio">Ciberseguridad</h1>
+				
+			
+				<div id="elena">
+					<p class="subtitulo"><strong>ELENA, nueva plataforma para la investigación sobre ciberamenazas</strong></p>
+					<img class="img2" src="elena.jpg"/>
+					<p>El <b>Centro Criptológico Nacional</b>, adscrito al Centro Nacional de Inteligencia, ha presentado <b>ELENA</b>, una nueva solución para facilitar la capacitación de los profesionales en ciberseguridad.</p><br>
+					<p>La plataforma permite a los usuarios adentrarse en el ámbito de la ciberinvestigación y practicar las técnicas, tácticas y procedimientos necesarios para realizar labores de este tipo en cometidos de prevención y análisis de ciberamenazas.</p><br>
+					<p>Los usuarios de <b>ELENA</b> encarnarán el rol del personaje llamado CCN-Warrior, que representa a un ciberinvestigador analizando el comportamiento de ciberamenazas que operan en ámbitos digitales, y tendrán que hacer frente a numerosos casos prácticos que resolver.</p><br>
+					<p>La plataforma ofrece diversos escenarios e itinerarios prácticos que simulan situaciones reales de diferente tipo, desde escenarios menos técnicos que requieren un mayor grado de lógica y toma de decisiones hasta simulaciones técnicas.</p><br>
+					<p>De este modo, <b>ELENA</b> se presenta como un complemento innovador a la formación teórica del usuario, facilitando el ensayo de los conceptos aprendidos en un entorno de laboratorio desarrollado mediante simulación digital.</p><br>
+					<iframe class="video" src="https://www.youtube.com/embed/SZlnyFujkGE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div id="pixeles">
+					<p class="subtitulo"><strong>Alertan sobre los píxeles espía que revelan si un correo se abre: dos tercios de 'emails' los usan</strong></p>
+					<img class="img2" src="pixelesespia.jpg"/>
+					<p>Los píxeles de seguimiento o <b>píxeles espía</b> en los correos electrónicos permiten saber si el receptor lo ha abierto y desde qué localización y dispositivo, y en la actualidad su uso se ha vuelto "endémico", según ha alertado la herramienta de seguridad para el correo Hey.</p><br>
+					<p>Como recoge la cadena británica BBC, dos tercios de los correos electrónicos recibidos por los usuarios de la herramienta de correo Hey contenían píxeles espía, un total de <b>600.000</b> mensajes al día del total de un millón de correos diarios analizados.</p><br>
+					<p>Los píxeles de seguimiento en los correos electrónicos son una técnica utilizada de forma frecuente, y permiten saber si este se ha abierto, cuándo, cuántas veces, desde qué dispositivo y la localización aproximada del usuario basada en su dirección IP, que incluso precisa la calle.</p><br>
+					<p>Suele aparecer como un archivo de imagen en formato GIF o PNG de 1x1 píxeles insertado en el encabezamiento o en el pie del correo, y normalmente no resulta apreciable a simple vista ni hay forma de evitarlo, como informa también la compañía de servicios en la nube CloudHQ.</p><br>
+					<p>El cofundador de la herramienta, David Heinemeier Hansson, ha asegurado que el uso de los píxeles de seguimiento se ha convertido en "endémico" en la actualidad y ha denunciado que se utilizan de forma invisible para el usuario.</p><br>
+					
+				</div>
+				
+			
+				<a class="atajo" href="#principio"><img class="img3" src="flecha.PNG" /></a>
+			
+			
+		
+		</div>
+		<div class="pie">
+			<font class="nombre" color= "white">2021--Contacto: ismaelnerja01@gmail.com</font>
+		</div>
+	</div>
+	<script>
+		clickCounter();
+		migasA();
+
+	</script>
+
+</body>
+</html>
