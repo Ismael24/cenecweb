@@ -29,8 +29,11 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		.encabezado {
 		  grid-column: 1 / span 2;
 		  grid-row: 1 / span 1;
-		  margin-bottom: 3%;
+		  margin-bottom: auto;
 		  padding-top: 4px;
+		  padding-bottom:4px;
+		  display:flex;
+		  align-items: center;
 		  
 		  
 		}
@@ -39,7 +42,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 
 		  grid-column: 1 / span 2;
 		  grid-row: 2 / span 1;
-		  color: white;
+		  color: black;
 		}
 		
 		.lado {
@@ -54,12 +57,17 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		  margin:0 auto;
 		  grid-column: 2 / span 1;
 		  grid-row: 3 / span 1;
-		  background-color:rgba(243,243,243,0.24);
+		  background-color:#0a3765;
 		  overflow:auto;
 		  
 		  
 		  
 		  
+		}
+		a:-webkit-any-link {
+			color: black;
+			cursor: pointer;
+			text-decoration: underline;
 		}
 		
 		.pie {
@@ -70,6 +78,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		}
 		
 		body {
+			background-color:#eee;
 			margin:0px;
 			font-family: 'Nunito', sans-serif;
 			background-repeat:no-repeat;
@@ -81,7 +90,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		
 		.encabezado {
 		  overflow: hidden;
-		  background-color: #333;
+		  background-color: #1d428a;
 		  
 		  
 		  
@@ -113,7 +122,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		  outline: none;
 		  color: white;
 		  padding: 10px 11px;
-		  background-color: inherit;
+		  background-color: #1d428a;
 		  font-family: inherit;
 		  margin: 0;
 		}
@@ -122,11 +131,16 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		  background-color: red;
 		  
 		}
+		.barraimg a:hover, .dropdown:hover .dropbtn {
+		  background-color: transparent;
+		  transform: scale(1.2);
+		  
+		}
 
 		.dropdown-content {
 		  display: none;
 		  position: absolute;
-		  background-color: #f9f9f9;
+		  background-color: #1d428a;
 		  min-width: 160px;
 		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 		  z-index: 1;
@@ -135,15 +149,17 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		.dropdown-content a {
 		  float: none;
 		  color: black;
-		  padding: 5px 16px;
+		  margin-top:10px;
+		  margin-bottom: 10px;
 		  text-decoration: none;
 		  display: block;
 		  text-align: left;
 		  font-size:13px;
+		  
 		}
 
 		.dropdown-content a:hover {
-		  background-color: #ddd;
+		  background-color: #eeeeee;
 		  
 		}
 
@@ -157,11 +173,18 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		@media screen and (max-width:750px){
 			/* reparamos el estilo para pantallas estrechas */
 			
-			.encabezado, .encabezado a, .encabezado>div, .dropbtn {
+			.encabezado a, .encabezado>div, .dropbtn {
 				width:100%;
 				float: none;
 				display:block;
 			}
+			.encabezado{
+				width:100%;
+				height:120%;
+				float: none;
+				display:block;
+				
+			} 
 			.lado{
 				display:none;
 			
@@ -172,6 +195,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 			.marco{
 				grid-template-columns: 2px auto;
 			}
+			
 						
 			
 		}
@@ -180,6 +204,11 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 			/* reparamos el estilo para pantallas estrechas */
 			.migas{
 				display:none;
+			}
+			.mininba{
+				margin-left:auto;
+				margin-right:auto;
+				
 			}
 						
 			
@@ -190,11 +219,17 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 			margin-bottom: 3%;
 			font-family: impact;
 			font-size:50px;
+			color:white;
 			
 		
 		
 		}
-		
+		.barraimg a{
+			padding:0px 0px;
+			margin-left:auto;
+			padding-top:5px;
+			
+		}
 		.subtitulo{
 			font-family: bree serif;
 			margin-left: 10%;
@@ -213,6 +248,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 			margin-bottom:0px;
 			font-family: calibri;
 			font-size:25px;
+			color:white;
 		
 		}
 		img.img1 {
@@ -221,7 +257,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 			object-fit:cover;
 			margin-top:10%;
 			margin-left: 20%;
-			margin-bottom: 10%;
+			margin-bottom: 2%;
 		}
 		img.img2 {
 			width:60%;
@@ -230,20 +266,39 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 			margin-left:20%;
 			
 		}
+		
+		
 		img.img3 {
 			width:60px;
 			height:center;
 			object-fit:cover;
 			
 		}
-		
+		.mininba{
+			margin-left:10px;
+			margin-right:15px;
+			width:70px;
+			
+			
+		}
+		.exit{
+			width:50px;
+			position:absolute;
+			right:50px; top:8px;
+			
+			
+		}
+		.exit:hover{
+			transform: scale(1.2);
+			
+		}
 		.atajo{
 			
 			
-			position:fixed;
-			margin-left:65%;
-			bottom:50px;
-		
+			width:50px;
+			position:absolute;
+			right:230px; bottom:60px;
+			
 		}
 		
 		.vertical-menu {
@@ -255,7 +310,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		}		
 	
 		.vertical-menu a {
-			background-color: #333; /* Grey background color */
+			background-color: #1d428a; /* Grey background color */
 			color: black; /* Black text color */
 			display: block; /* Make the links appear below each other */
 			text-decoration: none; /* Remove underline from links */
@@ -281,10 +336,59 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 			font-family: calibri;
 			font-size:17px;
 		}
+		.overlayVideoGeneral {
+			position: fixed;
+			display: none;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(0, 0, 0, 0.87);
+			z-index: 2;
+			
+}
+
+#video {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.pulse:hover,
+.pulse:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+.pulse {
+  color: white;
+  --hover: #ef8f6e;
+}
 		
 		#nVeces{
 			margin-left:77%;
 		
+		}
+		#this_title{
+			color:black;
+			
 		}
 /*
 
@@ -299,8 +403,5 @@ formularios: https://www.w3schools.com/css/css_form.asp
 posicionamiento: https://www.w3schools.com/css/css_positioning.asp
 selectores: https://www.w3schools.com/cssref/css_selectors.asp
 */
-
-
-
 
 
