@@ -39,21 +39,32 @@ fecha: Marzo 2021
 	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
 	<script> </script>
 	
-	<!-- scripts personalizados Javascript o JQuery -->
+	<!-- scripts personalizados Javascript o JQuery "https://www.youtube.com/watch?v=6KCNwN0pSNg"-->
 	<script></script>
+	<link rel="icon" href="pestañanba.png">
 </head>
 
 
-<body background="fondo.jpg">
+<body>
 
 	<div class="marco">
 		<div class="encabezado">
+			<div class="barraimg">
+				<a  href="index.html"><img class="mininba" src="mininba.png" /></a>
+			</div>
 			<a href="actualidad.html"  style="color:white;">Actualidad</a>
 			<a href="#tendencias" onclick="clickCounter()" style="color:white;">Tendencias</a>
 			<a href="#nuevo" onclick="clickCounter()" style="color:white;">Nuevo</a>
+			
+			
 		</div>
 		
+		
 		<div class="migas">
+		<div>
+			<a class="logout" href="index.html"><img class="exit" src="logout.png" /></a>
+			</div>
+		
 			<div id="nVeces">
 		
 			</div>
@@ -93,8 +104,12 @@ fecha: Marzo 2021
 					<p>Los Bulls ganaron las series por 4-1, con Jordan premiado con el MVP de las Finales, promediando 31.2 puntos con un 56% en tiros de campo, 11.4 asistencias, 6.6 rebotes, 2.8 robos de balón y 1.4 tapones.</p>
 					<br>
 					<p>Hay que resaltar que en los playoffs de este año los Chicago Bulls derrotaron a Detroit Pistons los vigentes bicampeones de la NBA, en esta serie los Bulls ganaron todos los partidos.</p><br>
-					<p><a href="https://www.youtube.com/watch?v=6KCNwN0pSNg" title="Último partido de la serie completo">Último partido de la serie completo</a><br><a href="https://www.youtube.com/watch?v=_Uh8TqTciKY" title="Mejores jugadas">Mejores jugadas</a></p>
+					
 					<img class="img1" src="1991.jpg"/>
+					<button class="buttons"><a onclick= "overlayOn5()"  class="pulse">Mejores jugadas</a></button>
+					 <div id="overlaySerie" class="overlayVideoGeneral" onclick="overlayOff5()">
+                        <div id="video"><iframe width="900" height="506" src="https://www.youtube.com/embed/_Uh8TqTciKY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    </div>
 				</div>
 				<div id="final1992">
 					<p class="subtitulo"><strong>1991-1992  Chicago Bulls</strong></p>
@@ -137,7 +152,7 @@ fecha: Marzo 2021
 					<img class="img1" src="1995.jpg"/>
 				</div>
 			
-				<a class="atajo" href="#principio"><img class="img3" src="flecha.PNG" /></a>
+				<a class="atajo" href="#principio"><img class="img3" src="flecha.png" /></a>
 			
 			
 		
@@ -146,7 +161,7 @@ fecha: Marzo 2021
 			<font class="nombre" color= "white">2021--Contacto: ismaelnerja01@gmail.com</font>
 		</div>
 	</div>
-
+<script type="text/javascript" src="00-script.js"></script>
 	<script>
 	clickCounter();
 	migasI();
