@@ -16,7 +16,18 @@ body{
 p{
 	font-size: 24px;
 }
-
+.exit{
+	width:50px;
+	position:absolute;
+	right:50px; top:8px;
+	z-index:100;
+			
+			
+}
+.exit:hover{
+			transform: scale(1.2);
+			
+}
 .contenedor{
     width: 90%;
     max-width: 1200px;
@@ -334,7 +345,7 @@ b{
 			left: 0;
 			right: 0;
 			bottom: 0;
-			background-color: rgba(0, 0, 0, 0.87);
+			background-color: rgba(0, 0, 0, 0);
 			z-index: 2;
 			
 }
@@ -435,6 +446,8 @@ footer{
 	
     transform: scale(1.02);
 }
+
+
 
 @media screen and (max-width: 470px){
 	.content-area{
