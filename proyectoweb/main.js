@@ -1,3 +1,5 @@
+
+
 /* 
 JavaScript / XML
 web o pagina: ejercicios de XML y JavaScript
@@ -26,6 +28,7 @@ function controlar(){
 	$("#ingresar").show();
 	$("#limpiar").show();
 	$("#desconectar").hide();
+	for(let timer=1;timer<5000000;timer++);	
 			
 	if (sessionStorage.getItem("usuarioLogueado")) {
 		// estado 3 de nuestro diagrama de estados - con usuario
@@ -37,6 +40,7 @@ function controlar(){
 		$("#desconectar").show();	
 		$("#championships").show();
 		$("#spacejam").show();
+		$("#requisitos").show();
 		
 	} else {
 		if (sessionStorage.getItem("usuarioIntentando")) {
@@ -45,7 +49,7 @@ function controlar(){
 			// debemos validar si el usuario existe
 			validarXML();
 			// tardo un poco en recargar para dar tiempo a AJAX?
-			for(let timer=1;timer<1000000;timer++);
+			for(let timer=1;timer<5000000;timer++);	
 			location.reload();
 			
 		} else {
@@ -56,6 +60,7 @@ function controlar(){
 			$("#desconectar").hide();
 			$("#championships").hide();
 			$("#spacejam").hide();
+			$("#requisitos").hide();
 		}
 	}
 }
@@ -93,13 +98,12 @@ function controlar(){
 //		cambio el orden y añado responseType
 
 		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml", true);
-		xhr.responseType = 'document';
 		xhr.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
 				miFuncion(this);
 			}
 		};
+		xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml", true);
 		xhr.send();
 	}
 
@@ -128,7 +132,7 @@ function controlar(){
 		sessionStorage.removeItem("usuarioLogueado");
 		sessionStorage.removeItem("usuarioIntentando");
 		sessionStorage.removeItem("claveIntentando");
-		location.reload();
+		window.location.reload();
 	}
 	
 
@@ -157,6 +161,10 @@ function buttonclick2(){
 	window.location="spacejam.html";
 	
 }
+function buttonclick3(){
+	window.location="parteobligatoria/requisitos.html";
+	
+}
 
 function mensaje(){
 	alert("Sin uso de momento")
@@ -164,7 +172,10 @@ function mensaje(){
 }
 
 
+
+
 inputs.forEach(input => {
 	input.addEventListener("focus", addcl);
 	input.addEventListener("blur", remcl);
 });
+
