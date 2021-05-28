@@ -1,14 +1,7 @@
 /*
 CSS 
-web o pagina: Estilo de la página championships
-autor:Ismael Paloma Narváez 
-fecha:
-RECORDAR:
-en caso de conflictos se aplica el estilo que se define último,
-o sea al final de este archivo o en la misma pagina html
-
-Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
-
+Web o pagina: Estilo de la página championships.
+Autor:Ismael Paloma Narváez.
 */
 
 *{
@@ -16,7 +9,11 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		  padding: 0;
 		  margin: 0;
 		}
-		
+		.enlaces{
+			font-size:30px;
+			margin-left:10%;
+			
+		}
 		.marco {
 		  display: grid;
 		  grid-template-columns: 250px auto;
@@ -171,7 +168,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		
 		
 		@media screen and (max-width:750px){
-			/* reparamos el estilo para pantallas estrechas */
+			
 			
 			.encabezado a, .encabezado>div, .dropbtn {
 				width:100%;
@@ -201,7 +198,7 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		}
 		
 		@media screen and (max-width:1212px){
-			/* reparamos el estilo para pantallas estrechas */
+			
 			.migas{
 				display:none;
 			}
@@ -303,26 +300,26 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 		
 		.vertical-menu {
 			margin-top: 7%;
-			width: 200px; /* Set a width if you like */
+			width: 200px; 
 			margin-left:15%;
 			
 			
 		}		
 	
 		.vertical-menu a {
-			background-color: #1d428a; /* Grey background color */
-			color: black; /* Black text color */
-			display: block; /* Make the links appear below each other */
-			text-decoration: none; /* Remove underline from links */
+			background-color: #1d428a;
+			color: black; 
+			display: block; 
+			text-decoration: none;
 		}
 
 		.vertical-menu a:hover {
-			background-color: red; /* Dark grey background on mouse-over */
+			background-color: red; 
 		}
 		
 		a:hover {
 			color:white;
-			font-size:1.1em;
+			
 			
 		}
 		
@@ -390,18 +387,27 @@ Se incluyen los principales SELECTORES SIMPLES; hay más combinaciones...
 			color:black;
 			
 		}
-/*
 
-pseudoclases, asignarles estilos en este orden llamado LVHA:
-   :link — :visited — :hover — :active.
-   
-Más selectores y documentación:
-pseudo-clases: https://www.w3schools.com/css/css_pseudo_classes.asp
-pseudo-elementos: https://www.w3schools.com/css/css_pseudo_elements.asp
-pseudo-atributos: https://www.w3schools.com/css/css_attribute_selectors.asp
-formularios: https://www.w3schools.com/css/css_form.asp
-posicionamiento: https://www.w3schools.com/css/css_positioning.asp
-selectores: https://www.w3schools.com/cssref/css_selectors.asp
-*/
+
+:root {
+
+	--colorBgDia: black;
+	--colorBgNoche: #1d428a;
+
+
+	--colorDia: black;
+	--colorNoche: white;
+
+
+	--colorBg: var(--colorBgNoche);
+	--color: var(--colorNoche);
+	--modo:"noche";
+}
+
+
+.encabezado{
+    background-color: var(--colorBg);
+	color: var(--color);
+}
 
 
