@@ -1,0 +1,159 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	background-color:black;
+  
+}
+.title{
+	margin-left:auto;
+	margin-right:auto;
+	display:inline-block;
+	text-align:center;
+	width:100%;
+	
+}
+.contenedor-zoom {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  margin: 25px auto;
+  position: relative;
+  height: 600px;
+}
+
+.contenedor-zoom:hover .background {
+  -webkit-transform: scale(0.8) translate(-50%, -50%);
+      -ms-transform: scale(0.8) translate(-50%, -50%);
+          transform: scale(0.8) translate(-50%, -50%);
+}
+.contenedor-zoom:hover .front {
+  -webkit-transform: scale(1.8);
+      -ms-transform: scale(1.8);
+          transform: scale(1.8);
+}
+
+.background {
+  top: 50%;
+  left: 30%;
+  width: 900px;
+  height: 600px;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+
+.front {
+  top: 30%;
+  left: 60.8%;
+  z-index: 1;
+  position: absolute;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+
+.wrapper{
+	height: 100%;
+	width:100%;
+	top:0;
+	position:relative;
+	display: table;
+	
+}
+.wrapper h2{
+	color: #fff;
+	text-align:center;
+	font-size: 30px;
+	font-family:poppins;
+	text-transform: uppercase;
+	font-weight: 900;
+	position:relative;
+	z-index: 4;
+	letter-spacing: 2px;
+	
+	
+	
+	
+}
+
+.img-area{
+	display: table-cell;
+	vertical-align:middle;
+	text-align:center;
+	
+}
+.single-img{
+	background-image: url(fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	-webkit-background-size: cover;
+	animation: animate ease-in-out 40s 0s infinite;
+	transform: translated(0,0,0);
+	-webkit-backface-visibility:hidden;
+	width: 100%;
+	position:absolute;
+	height:1000px;
+	top:0;
+	left:0;
+	right: 0;
+	z-index:0;
+	
+	
+	
+}
+.exit{
+	width:50px;
+	position:absolute;
+	right:50px; top:8px;
+			
+			
+		}
+.exit:hover{
+	transform: scale(1.2);
+			
+}
+
+@keyframes animate{
+	15%{
+		transform: scale(2);
+		filter:blur(3px);
+	}
+	30%{
+		transform: scale(1);
+		filter:blur(0);
+	}
+	85%{
+		transform: scale(2);
+		
+	}
+	100%{
+		transform: scale(1);
+		
+	}
+	
+	
+	
+	
+}
+@media screen and (max-width:900px){
+			.contenedor-zoom{
+				display:none;
+			}
+			.wrapper h2{
+				font-size:28px;
+				
+			}
+			
+						
+			
+		}
+
