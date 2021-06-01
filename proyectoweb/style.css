@@ -43,7 +43,7 @@ body{
 }
 
 .img img{
-	width: 700px;
+	width: 600px;
 	
 	
 }
@@ -231,7 +231,7 @@ a:hover{
 		justify-content: center;
 	}
 }
-@media screen and (max-width: 1610px){
+@media screen and (max-width: 1520px){
 
 
 	.img{
@@ -248,6 +248,6 @@ a:hover{
 }
 @-webkit-keyframes moving{
 	
-	100%{-webkit-transform: translateX(850px);}
+	100%{-webkit-transform: translateX(700px);}
 	
 }
